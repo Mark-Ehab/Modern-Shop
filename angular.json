@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "modershop:build:production"
+              "buildTarget": "modernshop:build:production"
             },
             "development": {
-              "buildTarget": "modershop:build:development"
+              "buildTarget": "modernshop:build:development"
             }
           },
           "defaultConfiguration": "development"
