@@ -6,26 +6,33 @@
         src="{{ imageCover }}"
         alt="Title"
       />
-      @if (onSale) {
-      <span class="badge bg-warning text-uppercase position-absolute"
-        >on sale</span
-      >
-      }
+      <div class="position-absolute d-flex align-items-center">
+        @if (onSale) {
+        <span class="badge bg-warning text-uppercase">on sale</span>
+        }
+        <div
+          class="rounded p-1 d-flex justify-content-center align-items-center fav-btn ms-auto bg-light"
+        >
+          <i class="fa-regular fa-heart"></i>
+        </div>
+      </div>
     </figure>
     <div class="card-body">
       <h4 class="card-title fw-bold">
         {{ title.split(" ", 2).join(" ") }}
       </h4>
-      <p class="card-text">
+      <p class="card-text mb-2">
         {{
           description.includes("\t")
             ? description.split("\t", 2).join(" ")
             : description.split(" ", 5).join(" ")
         }}
       </p>
-      <span class="d-block fw-bold">£{{ price }}</span>
       <span class="d-block fw-bold"
-        >Quantity: <span class="fw-normal">{{ quntity }}</span></span
+        ><span class="fw-medium">£</span>{{ price }}</span
+      >
+      <span class="d-block fw-bold"
+        ><span class="text-success">{{ quntity }}</span> left in stock</span
       >
     </div>
   </div>

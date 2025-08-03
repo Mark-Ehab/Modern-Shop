@@ -5,7 +5,12 @@
 #card .card:hover {
   transform: scale(1.07);
 }
-#card .card figure span {
+#card .card figure div {
   top: 1.25rem;
   left: 1.25rem;
+  right: 1.25rem;
+}
+#card .card figure div .fav-btn {
+  width: 1.75rem;
+  height: 1.75rem;
 }
