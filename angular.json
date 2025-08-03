@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "modershop": {
+    "modernshop": {
       "projectType": "application",
       "schematics": {},
       "root": "",
