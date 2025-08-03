@@ -1,0 +1,16 @@
+<section id="products">
+  <div class="row g-4">
+    @for (product of products; track product.id) {
+    <div class="col-12 col-md-4 col-lg-3">
+      <app-card
+        [title]="product.title"
+        [description]="product.description"
+        [imageCover]="product.imageCover"
+        [price]="product.price"
+        [quntity]="product.quantity"
+        [onSale]="product.onSale"
+      ></app-card>
+    </div>
+    }
+  </div>
+</section>

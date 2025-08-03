@@ -1,0 +1,9 @@
+#about {
+  background-image: url(/ashley-knedler-Pf5Pj7A5ddA-unsplash.jpg);
+  background-position: top;
+  background-size: cover;
+  min-height: calc(100vh - 9.3229rem);
+}
+#about h1 {
+  font-size: 3.4375rem;
+}

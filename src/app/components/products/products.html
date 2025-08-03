@@ -1,0 +1,33 @@
+<section id="products">
+  <div class="container">
+    <div class="wrapper py-5">
+      <h2 class="fw-bold mb-4 p-3">All Products :</h2>
+      <div class="row g-4">
+        @for (product of products; track product.id) {
+        <div class="col-12 col-md-4 col-lg-3">
+          <app-card
+            [title]="product.title"
+            [description]="product.description"
+            [imageCover]="product.imageCover"
+            [price]="product.price"
+            [quntity]="product.quantity"
+            [onSale]="product.onSale"
+          ></app-card>
+        </div>
+        }
+      </div>
+      <h2 #recommendedProducts class="fw-bold mb-4 p-3 mt-3">
+        Recommended Products :
+      </h2>
+      @defer (on viewport(recommendedProducts); prefetch on idle) {
+      <app-recommendedproducts></app-recommendedproducts>
+      } @placeholder {
+      <span class="p-3 fw-semibold">See More ...</span>
+      } @loading {
+      <span class="p-3 fw-semibold">Loading ...</span>
+      } @error {
+      <span class="p-3 fw-semibold">Error ...</span>
+      }
+    </div>
+  </div>
+</section>

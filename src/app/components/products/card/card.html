@@ -1,0 +1,32 @@
+<section id="card">
+  <div class="card">
+    <figure class="position-relative p-2 m-0">
+      <img
+        class="card-img-top img-fluid border border-bottom object-fit-cover rounded"
+        src="{{ imageCover }}"
+        alt="Title"
+      />
+      @if (onSale) {
+      <span class="badge bg-warning text-uppercase position-absolute"
+        >on sale</span
+      >
+      }
+    </figure>
+    <div class="card-body">
+      <h4 class="card-title fw-bold">
+        {{ title.split(" ", 2).join(" ") }}
+      </h4>
+      <p class="card-text">
+        {{
+          description.includes("\t")
+            ? description.split("\t", 2).join(" ")
+            : description.split(" ", 5).join(" ")
+        }}
+      </p>
+      <span class="d-block fw-bold">£{{ price }}</span>
+      <span class="d-block fw-bold"
+        >Quantity: <span class="fw-normal">{{ quntity }}</span></span
+      >
+    </div>
+  </div>
+</section>

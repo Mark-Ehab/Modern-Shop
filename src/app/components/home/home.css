@@ -1,0 +1,13 @@
+#home {
+  background-image: url(/andrew-neel-jtsW-Z6bFw-unsplash.jpg);
+  background-position: top;
+  background-size: cover;
+  min-height: calc(100vh - 9.3229rem);
+}
+#home h1 {
+  font-size: 3.4375rem;
+}
+#home .btn-custom {
+  --bs-btn-padding-x: 2.5rem;
+  --bs-btn-padding-y: 0.9375rem;
+}

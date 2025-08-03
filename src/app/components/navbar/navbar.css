@@ -1,0 +1,9 @@
+#navbar.navbar-custom {
+  --bs-navbar-padding-y: var(--navbar-padding-y);
+  --bs-navbar-hover-color: var(--nav-link-hover-color);
+  --bs-navbar-nav-link-padding-y: 1rem;
+  --bs-navbar-nav-link-padding-x: 1rem;
+}
+.navlink-active {
+  color: var(--nav-link-active-color);
+}

@@ -1,0 +1,11 @@
+#card .card {
+  cursor: pointer;
+  transition: 0.5s transform;
+}
+#card .card:hover {
+  transform: scale(1.07);
+}
+#card .card figure span {
+  top: 1.25rem;
+  left: 1.25rem;
+}
